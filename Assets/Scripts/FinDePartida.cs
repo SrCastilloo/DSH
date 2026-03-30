@@ -20,7 +20,7 @@ public class FinDePartida : MonoBehaviour
     private void CrearUI()
     {
         // --- EventSystem (necesario para que funcionen los botones) ---
-        if (FindObjectOfType<EventSystem>() == null)
+        if (FindAnyObjectByType<EventSystem>() == null)
         {
             var esObj = new GameObject("EventSystem");
             esObj.AddComponent<EventSystem>();
